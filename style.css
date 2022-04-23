@@ -17,14 +17,18 @@ body{
   flex-direction: column;
 }
 
+h1{
+  text-align: center;
+}
+
 button{
   appearance: none;
   border: none;
 }
 
 .target-div-wrapper{
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   border: 1px solid white;
 }
 
@@ -34,7 +38,7 @@ button{
 }
 
 .indicator-table-wrapper{
-  width: 500px;
+  width: 300px;
 }
 
 .indicator-table-wrapper tr{
@@ -45,11 +49,6 @@ button{
 .indicator-table-wrapper td{
   flex: 1;
   text-align: center;
-}
-
-.initial-span-wrapper{
-  position: relative;
-  top: calc(100% - 50%);
 }
 
 .button-div-wrapper{
