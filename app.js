@@ -18,8 +18,8 @@ pathElement.setAttribute('stroke', 'white');
 
 const path = `
   M0,0,
-  A500,500,0,0,1,500,500,
-  L0,500Z`;
+  A300,300,0,0,1,300,300,
+  L0,300Z`;
 pathElement.setAttribute('d', path);
 
 svgElement.appendChild(pathElement);
@@ -54,7 +54,7 @@ const updateSVG = () => {
   let randomX = svgElement.clientWidth * Math.random();
   let randomY = svgElement.clientHeight * Math.random();
 
-  let trueY = quarterCircle(500, randomX);
+  let trueY = quarterCircle(300, randomX);
   if (randomY < trueY) {
     innerCount++;
     addCircle(randomX, svgElement.clientHeight - randomY, '#28a745');
