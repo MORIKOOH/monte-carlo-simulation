@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monte-Carlo Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Monte-Carlo Simulation</h1>
+  <div id="button-div" class="button-div-wrapper">
+    <button type="button" id="start-button" class="start-button-wrapper">START</button>
+    <button type="button" id="stop-button" class="stop-button-wrapper">STOP</button>
+  </div>
+  <table id="indicator-table" class="indicator-table-wrapper">
+    <tr>
+      <th>N</th>
+      <th>inner</th>
+      <th>outer</th>
+      <th>approx π</th>
+      <th>precision</th>
+    </tr>
+    <tr>
+      <td id="total-count-display">-</td>
+      <td id="inner-count-display">-</td>
+      <td id="outer-count-display">-</td>
+      <td id="approximated-pi-display">-</td>
+      <td id="precision-pi-display">-</td>
+    </tr>
+  </table>
+  <div id="target-div" class="target-div-wrapper"></div>
+  <script src="app.js"></script>
+</body>
+</html>
