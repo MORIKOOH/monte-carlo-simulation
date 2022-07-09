@@ -75,16 +75,27 @@ const updateSVG = () => {
 
 }
 
-let timer = null;
+let timer;
 const start = () => {
   timer = setInterval(updateSVG, 10);
+  console.log(timer);
 }
 const stop = () => {
   clearInterval(timer);
+  console.log(timer);
 }
 
 const startButton = document.querySelector('#start-button');
-startButton.addEventListener('click', start, false);
-
 const stopButton = document.querySelector('#stop-button');
-stopButton.addEventListener('click', stop, false);
+
+startButton.addEventListener('click', () => {
+  start();
+  startButton.disabled = true;
+  stopButton.disabled = false;
+}, false);
+
+stopButton.addEventListener('click', () => {
+  stop();
+  startButton.disabled = false;
+  stopButton.disabled = true;
+}, false);
